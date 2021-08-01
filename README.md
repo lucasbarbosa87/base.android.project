@@ -1,2 +1,2 @@
 # Base Android Project
-Projeto base para projetos Android com gradlee KTS e composo
+Projeto base para projetos Android com gradle KTS e compose
