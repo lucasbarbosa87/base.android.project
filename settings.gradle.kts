@@ -5,5 +5,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Fidelity App"
+rootProject.name = "My App"
 include (":app")

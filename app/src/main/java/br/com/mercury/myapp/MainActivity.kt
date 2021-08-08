@@ -1,4 +1,4 @@
-package br.com.mercury.fidelityapp
+package br.com.mercury.myapp
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -8,7 +8,7 @@ import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import br.com.mercury.fidelityapp.ui.theme.FidelityAppTheme
+import br.com.mercury.myapp.ui.theme.FidelityAppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package br.com.mercury.fidelityapp.ui.theme
+package br.com.mercury.myapp.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

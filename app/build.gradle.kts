@@ -11,7 +11,7 @@ android {
     buildToolsVersion = "30.0.3"
 
     defaultConfig {
-        applicationId = "br.com.mercury.fidelityapp"
+        applicationId = "br.com.mercury.myapp"
         minSdk = 21
         targetSdk = 31
         versionCode = 1
