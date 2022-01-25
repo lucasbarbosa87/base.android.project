@@ -14,8 +14,7 @@ object BuildPlugins {
 
 object AndroidSdk {
     const val min = 21
-    private const val compile = 31
-    const val target = compile
+    const val target = 31
 }
 
 fun DependencyHandler.roomDb() {
@@ -35,7 +34,7 @@ fun DependencyHandler.koin() {
 fun DependencyHandler.lifecycleLibs() {
     add("kapt", Libraries.lifecycleCommon)
     add("implementation", Libraries.lifecycleExtensions)
-    add("implementation", Libraries.lifecycleViewmodel)
+    add("implementation", Libraries.lifecycleViewModel)
 }
 
 fun DependencyHandler.navigation() {
@@ -48,20 +47,23 @@ fun DependencyHandler.appCenter() {
     add("implementation", Libraries.appCenterCrashes)
 }
 
-fun DependencyHandler.retrofit(configurationType: ConfigurationType) {
+fun DependencyHandler.retrofit(configurationType: ConfigurationType = ConfigurationType.Implementation) {
     add(configurationType.value, Libraries.retrofit)
     add(configurationType.value, Libraries.retrofitConverterGson)
 }
 
-fun DependencyHandler.paging(configurationType: ConfigurationType) {
+fun DependencyHandler.paging(configurationType: ConfigurationType = ConfigurationType.Implementation) {
     add(configurationType.value, Libraries.paging2)
 //    add(configurationType.value, Libraries.pagingRuntime)
 //    add(configurationType.value, Libraries.pagingGuava)
 }
 
-fun DependencyHandler.firebase(configurationType: ConfigurationType, withAuth: Boolean = false) {
-    add(configurationType.value, "com.google.firebase:firebase-core:19.0.0")
-    add(configurationType.value, "com.google.firebase:firebase-messaging:22.0.0")
+fun DependencyHandler.firebase(
+    configurationType: ConfigurationType = ConfigurationType.Implementation,
+    withAuth: Boolean = false
+) {
+    add(configurationType.value, "com.google.firebase:firebase-core:20.0.2")
+    add(configurationType.value, "com.google.firebase:firebase-messaging:23.0.0")
     add(configurationType.value, "com.google.firebase:firebase-storage:20.0.0")
     if (withAuth) {
         add(configurationType.value, Libraries.firebaseAuth)

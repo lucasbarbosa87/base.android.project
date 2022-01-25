@@ -9,7 +9,7 @@ object Libraries {
 
     //Koin
     const val koin = "io.insert-koin:koin-android:${Versions.koin}"
-    const val koinViewModel = "io.insert-koin:koin-androidx-viewmodel:${Versions.koin}"
+    const val koinViewModel = "io.insert-koin:koin-androidx-viewmodel:${Versions.koinViewModel}"
     const val koinTest = "io.insert-koin:koin-test:${Versions.koin}"
 
     //ViewPager
@@ -20,7 +20,7 @@ object Libraries {
 
     //LifeCycle
     const val lifecycleExtensions = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycle}"
-    const val lifecycleViewmodel =
+    const val lifecycleViewModel =
         "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
     const val lifecycleCommon = "androidx.lifecycle:lifecycle-common-java8:${Versions.lifecycle}"
 
@@ -56,26 +56,27 @@ object Libraries {
     //Paginator
     const val pagingRuntime = "androidx.paging:paging-runtime:${Versions.paging}"
     const val pagingGuava = "androidx.paging:paging-guava:${Versions.paging}"
-    const val paging2 = "androidx.paging:paging-runtime-ktx:2.1.2"
+    const val paging2 = "androidx.paging:paging-runtime-ktx:3.1.0"
 
     const val firebaseAuth = "com.google.firebase:firebase-auth-ktx:21.0.1"
-    const val firebaseAuthSignInGoogle = "com.google.android.gms:play-services-auth:19.2.0"
+    const val firebaseAuthSignInGoogle = "com.google.android.gms:play-services-auth:20.0.1"
 
 }
 
 object Versions {
     const val dataBindingValidator = "2.0.0"
-    const val roomDb = "2.3.0"
-    const val koin = "2.2.3"
+    const val roomDb = "2.4.1"
+    const val koin = "3.1.5"
+    const val koinViewModel = "2.2.3"
     const val viewPager2 = "1.0.0"
     const val timeLine = "1.1.5"
     const val lifecycle = "2.2.0"
-    const val navigation = "2.3.2"
-    const val jodaTime = "2.10.9"
+    const val navigation = "2.4.0-rc01"
+    const val jodaTime = "2.10.13"
     const val appCenterSdkVersion = "4.0.0"
-    const val retrofit = "2.7.1"
-    const val guava = "30.0-jre"
+    const val retrofit = "2.9.0"
+    const val guava = "31.0.1-jre"
     const val workVersion = "2.4.0"
-    const val gsonVersion = "2.8.7"
+    const val gsonVersion = "2.8.9"
     const val paging = "3.0.0-beta01"
 }
